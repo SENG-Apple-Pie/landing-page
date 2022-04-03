@@ -44,7 +44,7 @@ h2 {
 
 .navbar li {
   list-style-type: none;
-  padding: 0.5em;
+  padding: 0.8em;
   display: inline;
   font-weight: 500;
 }
@@ -112,21 +112,6 @@ section {
   background: #C8D1E3;
 }
 
-.try-free-cta {
-  background: #354F82;
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 0.8em;
-  border-radius: 10px;
-  display: inline-block;
-  font-weight: 500;
-}
-
-.try-free-cta:hover {
-  background: #2C2B3F;
-  color: white;
-}
-
 .sign-up-cta {
   background: #6569CB;
   color: white;
@@ -138,8 +123,8 @@ section {
 }
 
 .sign-up-cta:hover {
-  background: #2C2B3F;
-  color: white;
+  background: #FFB965;
+  color: black;
 }
 
 .left-col h1 {
@@ -154,11 +139,6 @@ section {
   padding-bottom: 1em;
 }
 
-.left-col .try-free-cta {
-  padding: 0.5em 1.2em;
-  margin-right: 1.8em;
-}
-
 .left-col .sign-up-cta {
   padding: 0.5em 1.2em;
 }
@@ -168,7 +148,9 @@ section {
 }
 
 .features-section img {
-  width: 40%;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
 }
 
 .features-section .container {

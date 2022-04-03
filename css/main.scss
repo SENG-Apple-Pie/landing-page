@@ -149,38 +149,110 @@ section {
 
 .features-section {
     background: #F4F8FB;
+    color: #61607F;
 
     img {
         width: 12em;
         height: 12em;
         border-radius: 50%;
-        
     }
 
     .container {
-        text-align: center;
         display: flex;
         justify-content: space-between;
-    }
-
-    div {
+        text-align: center;
 
         h3 {
+            text-align: center;
             color: #6569CB;
+
         }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .feature {
+        width: 30%;
     }
 
 }
 
 .info {
-    img {
-        width: 20%;
+    margin-bottom: 2em;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info-images {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 5em;
+    }
+
+    .invoice1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        box-shadow: 8px 8px 5px #ccc;
+    }
+
+    .invoice2 {
+        position: absolute;
+        top: 10em;
+        left: -5em;
+        width: 70%;
+        box-shadow: 8px 8px 5px #ccc;
+    }
+
+    .info-text {
+        text-align: left;
+        color: #807F99;
+        margin-top: 2em;
+        margin-left: 5em;
+        margin-right: 5em;
+
+        h2 {
+            color: #807F99;
+        }
     }
     
 }
 
 .pricing {
     background: #F4F8FB;
+    color: #61607F;
+    text-align: center;
+
+    h3 {
+        text-align: center;
+    }
+
+    .premium {
+        padding-right: 15em;
+
+    }
+
+    .standard {
+        margin-left: -5em;
+    }
+
+    .pricing-text {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding-bottom: 4em;
+
+        ul {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+    }
+    
 
     .get-started-cta {
         background: #6569CB;

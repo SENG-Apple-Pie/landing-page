@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    background: #ffffff;
+    margin: 0;
+    font-family: 'Poppins';
+
+}
+
+.container {
+    margin: 0em 14em;
+}
+
+h2 {
+    text-align: center;
+    color: #354F82;
+}
+
+.navbar {
+    background: #C8D1E3;
+    padding: 1em 0em;
+    height: 3em;
+    width: 100%;
+    text-align: center;
+
+    .logo {
+        float: left;
+        text-decoration: none;
+        font-weight: 700;
+        color: #6569CB;
+        font-size: 1.2em;
+    }
+    
+    nav {
+        float: right;
+        background: #C8D1E3;
+
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 0.5em;
+        display: inline;
+        font-weight: 500;
+    }
+
+    a {
+        margin: 0.3em;
+        text-decoration: none;
+    }
+    
+}
+
+a {
+    color: #444444;
+}
+
+a:hover {
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 8em 0em;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 3em;
+    color: #2C2B3F;
+
+    .invoicing-text {
+        color: #345698;
+    }
+
+    .pie-text {
+        color: #FFB965;
+    }
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 1.1em;
+    }
+}
+
+.left-col {
+    float: left;
+    padding-top: 2em;
+}
+
+.hero-img {
+    width: 56%;
+    margin-top: -8em;
+    z-index: -5;
+}
+
+.features-section {
+    background: #C8D1E3;
+}
+
+.try-free-cta {
+    background: #354F82;
+    color: white; 
+    text-decoration: none; // to get rid of underline
+    padding: 0.5em 0.8em;
+    border-radius: 10px; // roundness of borders
+    display: inline-block;
+    font-weight: 500;
+}
+
+.try-free-cta:hover {
+    background:  #2C2B3F;
+    color: white;
+}
+
+.sign-up-cta {
+    background: #6569CB;
+    color: white; 
+    text-decoration: none; // to get rid of underline
+    padding: 0.5em 0.8em;
+    border-radius: 10px; // roundness of borders
+    display: inline-block;
+    font-weight: 500;
+}
+
+.sign-up-cta:hover {
+    background:  #2C2B3F;
+    color: white;
+}
+
+.left-col {
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    .subhead {
+        color: #565577;
+        font-size: 1.1em;
+        padding-bottom: 1em;
+    }
+
+    .try-free-cta {
+        padding: 0.5em 1.2em;
+        margin-right: 1.8em;
+
+    }
+
+    .sign-up-cta {
+        padding: 0.5em 1.2em;
+
+    }
+}
+
+.features-section {
+    background: #F4F8FB;
+
+    img {
+        width: 40%;
+    }
+
+    .container {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div {
+        h3 {
+            color: #6569CB;
+        }
+    }
+
+}
+
+.info {
+    img {
+        width: 20%;
+    }
+    
+}
+
+.pricing {
+    background: #F4F8FB;
+
+    .get-started-cta {
+        background: #6569CB;
+        color: white; 
+        text-decoration: none; // to get rid of underline
+        padding: 0.5em 0.8em;
+        border-radius: 10px; // roundness of borders
+        display: inline-block;
+        font-weight: 500;
+    }
+
+}
+
+.footer-section {
+    background: #354F82;
+    padding: 2em 0em;
+
+    .container {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        color: #9AA7C0;
+
+        h3 {
+            color: white;
+        }
+
+        div {
+            padding: 0em 4em;
+        }
+
+        li {
+            padding-bottom: 0.8em;
+        }
+    }
+
+}

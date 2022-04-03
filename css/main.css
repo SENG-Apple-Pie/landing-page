@@ -145,6 +145,7 @@ section {
 
 .features-section {
   background: #F4F8FB;
+  color: #61607F;
 }
 
 .features-section img {
@@ -154,7 +155,33 @@ section {
 }
 
 .features-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
+}
+
+.features-section .container h3 {
+  text-align: center;
+  color: #6569CB;
+}
+
+.features-section .container p {
+  text-align: left;
+}
+
+.features-section .feature {
+  width: 30%;
+}
+
+.info {
+  margin-bottom: 2em;
+}
+
+.info .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,16 +190,75 @@ section {
           justify-content: space-between;
 }
 
-.features-section div h3 {
-  color: #6569CB;
+.info .info-images {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 5em;
 }
 
-.info img {
-  width: 20%;
+.info .invoice1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  -webkit-box-shadow: 8px 8px 5px #ccc;
+          box-shadow: 8px 8px 5px #ccc;
+}
+
+.info .invoice2 {
+  position: absolute;
+  top: 10em;
+  left: -5em;
+  width: 70%;
+  -webkit-box-shadow: 8px 8px 5px #ccc;
+          box-shadow: 8px 8px 5px #ccc;
+}
+
+.info .info-text {
+  text-align: left;
+  color: #807F99;
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.info .info-text h2 {
+  color: #807F99;
 }
 
 .pricing {
   background: #F4F8FB;
+  color: #61607F;
+  text-align: center;
+}
+
+.pricing h3 {
+  text-align: center;
+}
+
+.pricing .premium {
+  padding-right: 15em;
+}
+
+.pricing .standard {
+  margin-left: -5em;
+}
+
+.pricing .pricing-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  padding-bottom: 4em;
+}
+
+.pricing .pricing-text ul {
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 .pricing .get-started-cta {

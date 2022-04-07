@@ -15,11 +15,14 @@ h2 {
 }
 
 .navbar {
+  position: fixed;
   background: #C8D1E3;
   padding: 1em 0em;
   height: 3em;
   width: 100%;
   text-align: center;
+  top: 0px;
+  z-index: 100000;
 }
 
 .navbar .logo {

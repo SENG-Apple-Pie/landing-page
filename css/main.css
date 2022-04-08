@@ -6,6 +6,8 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
   margin: 0em 14em;
 }
 
@@ -57,6 +59,10 @@ h2 {
   text-decoration: none;
 }
 
+.logo {
+  padding-top: 0.2em;
+}
+
 a {
   color: #444444;
 }
@@ -106,8 +112,9 @@ section {
 }
 
 .hero-img {
-  width: 56%;
-  margin-top: -8em;
+  width: 500px;
+  height: 500px;
+  margin-left: 50px;
   z-index: -5;
 }
 
@@ -165,6 +172,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
+  gap: 50px;
 }
 
 .features-section .container h3 {
@@ -177,7 +185,7 @@ section {
 }
 
 .features-section .feature {
-  width: 30%;
+  width: 300px;
 }
 
 .info {
@@ -188,6 +196,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -198,13 +207,15 @@ section {
   top: 0;
   left: 0;
   margin-left: 5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info .invoice1 {
   position: relative;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 200px;
   -webkit-box-shadow: 8px 8px 5px #ccc;
           box-shadow: 8px 8px 5px #ccc;
 }
@@ -213,7 +224,7 @@ section {
   position: absolute;
   top: 10em;
   left: -5em;
-  width: 70%;
+  width: 150px;
   -webkit-box-shadow: 8px 8px 5px #ccc;
           box-shadow: 8px 8px 5px #ccc;
 }
@@ -234,18 +245,17 @@ section {
   background: #F4F8FB;
   color: #61607F;
   text-align: center;
+  display: flex;
+}
+
+.pricing .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing h3 {
   text-align: center;
-}
-
-.pricing .premium {
-  padding-right: 15em;
-}
-
-.pricing .standard {
-  margin-left: -5em;
 }
 
 .pricing .pricing-text {
@@ -257,6 +267,7 @@ section {
           justify-content: space-between;
   text-align: left;
   padding-bottom: 4em;
+  gap: 100px;
 }
 
 .pricing .pricing-text ul {
@@ -272,6 +283,7 @@ section {
   border-radius: 10px;
   display: inline-block;
   font-weight: 500;
+  width: 150px
 }
 
 .footer-section {
@@ -284,6 +296,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -302,3 +315,47 @@ section {
   padding-bottom: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 1200px) {
+  .info .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .info .info-images {
+    margin-bottom: 130px;
+  }
+
+  .footer-section {
+    padding: 0px;
+  }
+
+  .pricing-text {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .footer-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-section .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 0em 8em;
+    align-items: center;
+  }
+  .hero-img {
+    width: 500px;
+    height: 500px;
+    margin-left: 0px;
+  }
+  .info-text {
+    width: 300px;
+  }
+}

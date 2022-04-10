@@ -63,14 +63,6 @@ h2 {
   padding-top: 0.2em;
 }
 
-a {
-  color: #444444;
-}
-
-a:hover {
-  color: grey;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -83,7 +75,7 @@ section {
 
 .hero {
   text-align: center;
-  margin-top: 3em;
+  margin-top: -3em;
   color: #2C2B3F;
 }
 
@@ -396,6 +388,18 @@ a {
 
 .topnav .icon {
   display: none;
+}
+
+.black {
+  color: #354F82;
+}
+
+a {
+  color: #444444;
+}
+
+a:hover {
+  color: grey;
 }
 
 @media screen and (max-width: 600px) {

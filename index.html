@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pi-Invoicing</title>
+    <title name="nav-title">Pi-Invoicing</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Pi-Invoicing</a>
 
-            <nav>
-                <ul class="primary-nav">
-                    <li><a href="#features-section">Features</a></li>
-                    <li><a href="#info-section">Info</a></li>
-                    <li><a href="#pricing-section">Pricing</a></li>
-                    <a href="https://einvoice.michaelhe.co.nz/session/signin" target="_blank" class="sign-up-cta">Sign in</a>
-
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <nav class="topnav" id="myTopnav">
+        <a href="#" class="logo">Pi-Invoicing</a>
+        <a href="#features-section" class="black">Features</a>
+        <a href="#info-section" class="black">Info</a>
+        <a href="#pricing-section" class="black">Pricing</a>
+        <a href="https://einvoice.michaelhe.co.nz/session/signin" target="_blank" class="sign-in-cta">Sign in</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
 
     <section class="hero">
         <div class="container">
@@ -70,7 +67,6 @@
                     Not only does manual invoicing require inordinate amounts of time and budget expenses validating the invoice, the process also faces many other common problems such as misplacement, a lack of transparency or fraud vulnerability.
                     
                     It is predicted that switching from manual to e-invoicing will save businesses $20 in costs for each invoice. Currently, all Commonwealth agencies are on track to have the capability to receive e-invoices by 1 July 2022, with over 80 per cent of Commonwealth invoices able to be received electronically.</p>
-
             </div>
 
             <div class="info-images">
@@ -109,8 +105,6 @@
                 </div>
             </div>
             <a href="https://einvoice.michaelhe.co.nz/session/signin" target="_blank" class="get-started-cta">Get started now</a>
-
-
         </div>
     </section>
 
@@ -150,5 +144,16 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+        }
+    </script>
 </body>
 </html>

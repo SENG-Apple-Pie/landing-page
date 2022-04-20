@@ -9,6 +9,8 @@ body {
 
 .container {
     margin: 0em 14em;
+    display: flex;
+    flex-direction: row;
 }
 
 h2 {
@@ -17,11 +19,14 @@ h2 {
 }
 
 .navbar {
+    position: fixed;
     background: #C8D1E3;
     padding: 1em 0em;
     height: 3em;
     width: 100%;
     text-align: center;
+    top: 0px;
+    z-index: 100000;
 
     .logo {
         float: left;
@@ -58,14 +63,6 @@ h2 {
     
 }
 
-a {
-    color: #444444;
-}
-
-a:hover {
-    color: grey;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -78,7 +75,7 @@ section {
 
 .hero {
     text-align: center;
-    margin-top: 3em;
+    margin-top: -1em;
     color: #2C2B3F;
 
     .invoicing-text {
@@ -87,6 +84,7 @@ section {
 
     .pie-text {
         color: #FFB965;
+        padding-top: 50px;
     }
 
 
@@ -100,12 +98,13 @@ section {
 
 .left-col {
     float: left;
-    padding-top: 2em;
+    padding-top: 4em;
 }
 
 .hero-img {
-    width: 56%;
-    margin-top: -8em;
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
     z-index: -5;
 }
 
@@ -113,26 +112,12 @@ section {
     background: #C8D1E3;
 }
 
-.sign-up-cta {
-    background: #6569CB;
-    color: white; 
-    text-decoration: none; // to get rid of underline
-    padding: 0.5em 0.8em;
-    border-radius: 10px; // roundness of borders
-    display: inline-block;
-    font-weight: 500;
-}
-
-.sign-up-cta:hover {
-    background:  #FFB965;
-    color: black;
-}
-
 .left-col {
     h1 {
         font-size: 2.5em;
         line-height: 1.3em;
         margin-top: .2em;
+        gap: 50px;
     }
 
     .subhead {
@@ -174,7 +159,7 @@ section {
     }
 
     .feature {
-        width: 30%;
+        width: 300px;
     }
 
 }
@@ -184,6 +169,7 @@ section {
     .container {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
     
     .info-images {
@@ -191,13 +177,15 @@ section {
         top: 0;
         left: 0;
         margin-left: 5em;
+        display: flex;
+        flex-direction: column;
     }
 
     .invoice1 {
         position: relative;
         top: 0;
         left: 0;
-        width: 80%;
+        width: 200px;
         box-shadow: 8px 8px 5px #ccc;
     }
 
@@ -205,7 +193,7 @@ section {
         position: absolute;
         top: 10em;
         left: -5em;
-        width: 70%;
+        width: 150px;
         box-shadow: 8px 8px 5px #ccc;
     }
 
@@ -227,30 +215,20 @@ section {
     background: #F4F8FB;
     color: #61607F;
     text-align: center;
+    display: flex;
 
-    h3 {
-        text-align: center;
-    }
-
-    .premium {
-        padding-right: 15em;
-
-    }
-
-    .standard {
-        margin-left: -5em;
-    }
-
-    .pricing-text {
+    .container {
         display: flex;
-        justify-content: space-between;
-        text-align: left;
-        padding-bottom: 4em;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        ul {
-            list-style-type: square;
-            list-style-position: inside;
-        }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
     }
     
 
@@ -275,6 +253,7 @@ section {
         display: flex;
         justify-content: space-between;
         color: #9AA7C0;
+        flex-direction: row;
 
         h3 {
             color: white;
@@ -290,3 +269,189 @@ section {
     }
 
 }
+
+/*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 1200px) {
+    .info .container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .info .info-images {
+      margin-bottom: 130px;
+    }
+  
+    .footer-section {
+      padding: 0px;
+    }
+  
+    .pricing-text {
+      flex-direction: column;
+      gap: 0px;
+    }
+  
+    .footer-section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .footer-section .container {
+      flex-direction: column;
+    }
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .container {
+      flex-direction: column-reverse;
+      margin: 0em 8em;
+      align-items: center;
+    }
+    .hero-img {
+      width: 500px;
+      height: 500px;
+      margin-left: 0px;
+    }
+    .info-text {
+      width: 300px;
+    }
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #C8D1E3;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100000;
+  }
+  
+  @media screen and (min-width: 1200px){
+    .topnav {
+      padding: 1em 0em;
+      height: 3em;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 1000px){
+    .topnav {
+      padding: 1em 0em;
+      height: 3em;
+      width: 100%;
+    }
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .black {
+    color: #354F82;
+  }
+  
+  .sign-in-cta {
+    background: #6569CB;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .sign-in-cta:hover {
+    background: #FFB965;
+    color: black;
+  }
+  
+  .sign-up-cta {
+    background: #6569CB;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .sign-up-cta:hover {
+    background: #FFB965;
+    color: black;
+  }
+  
+  .logo {
+    padding-top: 0.2em;
+    color: #6569CB;
+    font-weight: 600;
+    margin-left: 230px;
+    margin-right: 300px;
+    font-size: 30px;
+  }
+  
+  @media screen and (min-width: 1700px) {
+    .logo {
+      margin-left: 230px;
+      margin-right: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .logo {
+      margin-left: 230px;
+      margin-right: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo {
+      margin: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      top: 0;
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
